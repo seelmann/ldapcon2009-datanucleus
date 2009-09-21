@@ -1,0 +1,26 @@
+dn: dc=example,dc=com
+objectClass: domain
+objectClass: top
+dc: example
+
+dn: ou=Groups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
+
+dn: ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: ou=UnixAccounts,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: UnixAccounts
+
+dn: ou=UnixGroups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: UnixGroups
+
+

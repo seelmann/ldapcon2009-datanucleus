@@ -1,0 +1,12 @@
+Java LDAP Persistence with DataNucleus
+
+DataNucleus is a popular Java persistence framework implementing JDO and JPA standards. Beside persistence to RDBMS it also supports a lot of other datastores - like LDAP.
+
+DataNucleus makes it easy to map LDAP entries to Java objects and vice versa. Relationships between Java objects are also adressed, they could be mapped to well-known concepts in LDAP: DN references (like used in groupOfNames), attribute matching (like used in posixAccount/posixGroup) and of course leveraging LDAP's hierarchical nature. Java programmers only have to deal with their Java objects and standardized persistence APIs. All LDAP specifics like DNs, filters, entries and object classes are moved to the mapping configuration. 
+
+This talk will give an overview how Java LDAP persistence using DataNucleus works, discusses the good and the bad side of using JDO for LDAP persistence, and shows some working examples.
+
+--
+
+Stefan Seelmann is an independent software developer and consultant, working on LDAP and identity management projects. He is committer and PMC member of the Apache Directory project, focusing on development of Apache Directory Studio. He is also lead developer of the DataNucleus LDAP store subproject.
+

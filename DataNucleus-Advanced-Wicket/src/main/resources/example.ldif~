@@ -1,0 +1,3402 @@
+version: 1
+
+dn: dc=example,dc=com
+objectClass: extensibleObject
+objectClass: domain
+objectClass: top
+dc: example
+
+dn: ou=Users2,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Users2
+
+dn: ou=Groups2,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups2
+
+dn: ou=People,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: People
+
+dn: cn=Adan Abrams,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Adan Abrams
+sn: Abrams
+description: 19741108113600Z
+employeeNumber: 7
+givenName: Adan
+telephoneNumber: 902-451-7619
+telephoneNumber: 254-323-1920
+uid: aabrams
+userPassword:: c2VjcmV0
+
+dn: cn=Chuck Brunato,ou=People,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Chuck Brunato
+sn: Brunato
+description: 19650324034500Z
+employeeNumber: 3
+givenName: Chuck
+telephoneNumber: 907-547-9114
+telephoneNumber: 169-637-3314
+uid: cbrunato
+userPassword:: c2VjcmV0
+
+dn: cn=Adan Abrams,ou=Users2,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Adan Abrams
+sn: Abrams
+description: 19741108113600Z
+employeeNumber: 7
+givenName: Adan
+telephoneNumber: 902-451-7619
+telephoneNumber: 254-323-1920
+uid: aabrams
+userPassword:: c2VjcmV0
+
+dn: cn=Chuck Brunato,ou=Users2,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Chuck Brunato
+sn: Brunato
+description: 19650324034500Z
+employeeNumber: 3
+givenName: Chuck
+telephoneNumber: 907-547-9114
+telephoneNumber: 169-637-3314
+uid: cbrunato
+userPassword:: c2VjcmV0
+
+dn: cn=Employee,ou=Groups2,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Employee
+member: cn=Engineering,ou=Groups,dc=example,dc=com
+member: cn=Salesperson,ou=Groups,dc=example,dc=com
+
+dn: cn=Partner,ou=Groups2,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Partner
+member: cn=Chuck Brunato,ou=Users,dc=example,dc=com
+
+dn: cn=Engineering,ou=Groups2,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Engineering
+member: cn=Hardware-Engineering,ou=Groups,dc=example,dc=com
+member: cn=Software-Engineering,ou=Groups,dc=example,dc=com
+
+dn: cn=Software-Engineering,ou=Groups2,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Software-Engineering
+member: cn=Adan Abrams,ou=Users,dc=example,dc=com
+
+dn: cn=Salesperson,ou=Groups2,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Salesperson
+member: cn=Foo Bar,ou=Users,dc=example,dc=com
+
+dn: cn=Hardware-Engineering,ou=Groups2,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Hardware-Engineering
+member: uid=admin,ou=system
+
+dn: cn=Foo Bar,ou=Users2,dc=example,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Foo Bar
+sn: Bar
+description: 19650324034500Z
+employeeNumber: 3
+givenName: Foo
+telephoneNumber: 907-547-9114
+telephoneNumber: 169-637-3315
+uid: fbar
+userPassword:: c2VjcmV0
+
+dn: ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: ou=Groups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
+
+dn: ou=UnixAccounts,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: UnixAccounts
+
+dn: ou=UnixGroups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: UnixGroups
+
+dn: c=Country-0,ou=Users,dc=example,dc=com
+objectClass: country
+objectClass: top
+c: Country-0
+
+dn: c=Country-1,ou=Users,dc=example,dc=com
+objectClass: country
+objectClass: top
+c: Country-1
+
+dn: c=Country-2,ou=Users,dc=example,dc=com
+objectClass: country
+objectClass: top
+c: Country-2
+
+dn: o=Unit-0-0,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-0-0
+
+dn: o=Unit-0-1,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-0-1
+
+dn: o=Unit-0-2,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-0-2
+
+dn: o=Unit-1-0,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-1-0
+
+dn: o=Unit-1-1,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-1-1
+
+dn: o=Unit-1-2,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-1-2
+
+dn: o=Unit-2-0,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-2-0
+
+dn: o=Unit-2-1,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-2-1
+
+dn: o=Unit-2-2,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organization
+objectClass: top
+o: Unit-2-2
+
+dn: ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-0-0
+
+dn: ou=Team-0-0-1,o=Unit-0-0,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-0-1
+
+dn: ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-0-2
+
+dn: ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-1-0
+
+dn: ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-1-1
+
+dn: ou=Team-0-1-2,o=Unit-0-1,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-1-2
+
+dn: ou=Team-0-2-0,o=Unit-0-2,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-2-0
+
+dn: ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-2-1
+
+dn: ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-0-2-2
+
+dn: ou=Team-1-0-0,o=Unit-1-0,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-0-0
+
+dn: ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-0-1
+
+dn: ou=Team-1-0-2,o=Unit-1-0,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-0-2
+
+dn: ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-1-0
+
+dn: ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-1-1
+
+dn: ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-1-2
+
+dn: ou=Team-1-2-0,o=Unit-1-2,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-2-0
+
+dn: ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-2-1
+
+dn: ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-1-2-2
+
+dn: ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-0-0
+
+dn: ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-0-1
+
+dn: ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-0-2
+
+dn: ou=Team-2-1-0,o=Unit-2-1,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-1-0
+
+dn: ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-1-1
+
+dn: ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-1-2
+
+dn: ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-2-0
+
+dn: ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-2-1
+
+dn: ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Team-2-2-2
+
+dn: cn=User-0-0-0-0,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-0-0
+sn: Bar
+employeeNumber: 123
+givenName: Foo
+uid: u-0-0-0-0
+
+dn: cn=User-0-0-0-1,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-0-1
+
+dn: cn=User-0-0-0-2,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-0-2
+
+dn: cn=User-0-0-1-0,ou=Team-0-0-1,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-1-0
+
+dn: cn=User-0-0-1-1,ou=Team-0-0-1,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-1-1
+
+dn: cn=User-0-0-1-2,ou=Team-0-0-1,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-1-2
+
+dn: cn=User-0-0-2-0,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-2-0
+
+dn: cn=User-0-0-2-1,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-2-1
+
+dn: cn=User-0-0-2-2,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-0-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-0-2-2
+
+dn: cn=User-0-1-0-0,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-0-0
+
+dn: cn=User-0-1-0-1,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-0-1
+
+dn: cn=User-0-1-0-2,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-0-2
+
+dn: cn=User-0-1-1-0,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-1-0
+
+dn: cn=User-0-1-1-1,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-1-1
+
+dn: cn=User-0-1-1-2,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-1-2
+
+dn: cn=User-0-1-2-0,ou=Team-0-1-2,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-2-0
+
+dn: cn=User-0-1-2-1,ou=Team-0-1-2,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-2-1
+
+dn: cn=User-0-1-2-2,ou=Team-0-1-2,o=Unit-0-1,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-1-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-1-2-2
+
+dn: cn=User-0-2-0-0,ou=Team-0-2-0,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-0-0
+
+dn: cn=User-0-2-0-1,ou=Team-0-2-0,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-0-1
+
+dn: cn=User-0-2-0-2,ou=Team-0-2-0,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-0-2
+
+dn: cn=User-0-2-1-0,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-1-0
+
+dn: cn=User-0-2-1-1,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-1-1
+
+dn: cn=User-0-2-1-2,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-1-2
+
+dn: cn=User-0-2-2-0,ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-2-0
+
+dn: cn=User-0-2-2-1,ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-2-1
+
+dn: cn=User-0-2-2-2,ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-0-2-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-0-2-2-2
+
+dn: cn=User-1-0-0-0,ou=Team-1-0-0,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-0-0
+
+dn: cn=User-1-0-0-1,ou=Team-1-0-0,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-0-1
+
+dn: cn=User-1-0-0-2,ou=Team-1-0-0,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-0-2
+
+dn: cn=User-1-0-1-0,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-1-0
+
+dn: cn=User-1-0-1-1,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-1-1
+
+dn: cn=User-1-0-1-2,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-1-2
+
+dn: cn=User-1-0-2-0,ou=Team-1-0-2,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-2-0
+
+dn: cn=User-1-0-2-1,ou=Team-1-0-2,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-2-1
+
+dn: cn=User-1-0-2-2,ou=Team-1-0-2,o=Unit-1-0,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-0-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-0-2-2
+
+dn: cn=User-1-1-0-0,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-0-0
+
+dn: cn=User-1-1-0-1,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-0-1
+
+dn: cn=User-1-1-0-2,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-0-2
+
+dn: cn=User-1-1-1-0,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-1-0
+
+dn: cn=User-1-1-1-1,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-1-1
+
+dn: cn=User-1-1-1-2,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-1-2
+
+dn: cn=User-1-1-2-0,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-2-0
+
+dn: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-2-1
+
+dn: cn=User-1-1-2-2,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-1-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-1-2-2
+
+dn: cn=User-1-2-0-0,ou=Team-1-2-0,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-0-0
+
+dn: cn=User-1-2-0-1,ou=Team-1-2-0,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-0-1
+
+dn: cn=User-1-2-0-2,ou=Team-1-2-0,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-0-2
+
+dn: cn=User-1-2-1-0,ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-1-0
+
+dn: cn=User-1-2-1-1,ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-1-1
+
+dn: cn=User-1-2-1-2,ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-1-2
+
+dn: cn=User-1-2-2-0,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-2-0
+
+dn: cn=User-1-2-2-1,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-2-1
+
+dn: cn=User-1-2-2-2,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-1-2-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-1-2-2-2
+
+dn: cn=User-2-0-0-0,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-0-0
+
+dn: cn=User-2-0-0-1,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-0-1
+
+dn: cn=User-2-0-0-2,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-0-2
+
+dn: cn=User-2-0-1-0,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-1-0
+
+dn: cn=User-2-0-1-1,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-1-1
+
+dn: cn=User-2-0-1-2,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-1-2
+
+dn: cn=User-2-0-2-0,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-2-0
+
+dn: cn=User-2-0-2-1,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-2-1
+
+dn: cn=User-2-0-2-2,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-0-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-0-2-2
+
+dn: cn=User-2-1-0-0,ou=Team-2-1-0,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-0-0
+
+dn: cn=User-2-1-0-1,ou=Team-2-1-0,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-0-1
+
+dn: cn=User-2-1-0-2,ou=Team-2-1-0,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-0-2
+
+dn: cn=User-2-1-1-0,ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-1-0
+
+dn: cn=User-2-1-1-1,ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-1-1
+
+dn: cn=User-2-1-1-2,ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-1-2
+
+dn: cn=User-2-1-2-0,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-2-0
+
+dn: cn=User-2-1-2-1,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-2-1
+
+dn: cn=User-2-1-2-2,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-1-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-1-2-2
+
+dn: cn=User-2-2-0-0,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-0-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-0-0
+
+dn: cn=User-2-2-0-1,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-0-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-0-1
+
+dn: cn=User-2-2-0-2,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-0-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-0-2
+
+dn: cn=User-2-2-1-0,ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-1-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-1-0
+
+dn: cn=User-2-2-1-1,ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-1-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-1-1
+
+dn: cn=User-2-2-1-2,ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-1-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-1-2
+
+dn: cn=User-2-2-2-0,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-2-0
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-2-0
+
+dn: cn=User-2-2-2-1,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-2-1
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-2-1
+
+dn: cn=User-2-2-2-2,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=example
+ ,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: User-2-2-2-2
+sn: Bar
+employeeNumber: 0
+givenName: Foo
+uid: u-2-2-2-2
+
+dn: cn=Group-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0
+member: cn=User-0-1-1-0,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-2-2-1,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-1-1,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-0-0,ou=Groups,dc=example,dc=com
+member: cn=Group-0-1,ou=Groups,dc=example,dc=com
+member: cn=Group-0-2,ou=Groups,dc=example,dc=com
+member: cn=User-0-0-0-0,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-0
+member: cn=User-2-0-2-1,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-0-0,ou=Team-1-0-0,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-0-2,ou=Team-1-0-0,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-0-0-0,ou=Groups,dc=example,dc=com
+member: cn=Group-0-0-1,ou=Groups,dc=example,dc=com
+member: cn=Group-0-0-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-0-0-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-0-0
+member: cn=User-0-1-1-0,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-2-2,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-1,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-0-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-0-1
+member: cn=User-2-0-2-2,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-2,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-0-0,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-0-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-0-2
+member: cn=User-2-1-2-1,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-1-0-0,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-1
+member: cn=User-2-0-2-0,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-1-1-0,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-0-0,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-0-1-0,ou=Groups,dc=example,dc=com
+member: cn=Group-0-1-1,ou=Groups,dc=example,dc=com
+member: cn=Group-0-1-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-0-1-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-1-0
+member: cn=User-0-1-1-2,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-2-2,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-2-2-2,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-1-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-1-1
+member: cn=User-2-1-1-2,ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-2-1-0,ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-0-1,ou=Team-0-2-0,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-1-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-1-2
+member: cn=User-2-2-1-2,ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-1-2,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-1-2,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-2
+member: cn=User-2-0-0-1,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-2-2,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-1-2,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-0-2-0,ou=Groups,dc=example,dc=com
+member: cn=Group-0-2-1,ou=Groups,dc=example,dc=com
+member: cn=Group-0-2-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-0-2-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-2-0
+member: cn=User-1-1-0-0,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-1-1,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-0,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-2-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-2-1
+member: cn=User-1-2-1-2,ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-2-2-1,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-1-1,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-0-2-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-0-2-2
+member: cn=User-2-2-1-1,ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-1-0-1,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-2-0-1,ou=Team-1-2-0,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1
+member: cn=User-1-1-0-1,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-1-0-1,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-1-2-1,ou=Team-0-1-2,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-1-0,ou=Groups,dc=example,dc=com
+member: cn=Group-1-1,ou=Groups,dc=example,dc=com
+member: cn=Group-1-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-1-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-0
+member: cn=User-2-2-0-1,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-1-1,ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-2-2-2,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-1-0-0,ou=Groups,dc=example,dc=com
+member: cn=Group-1-0-1,ou=Groups,dc=example,dc=com
+member: cn=Group-1-0-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-1-0-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-0-0
+member: cn=User-1-2-1-1,ou=Team-1-2-1,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-2-0,ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-1-1,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-0-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-0-1
+member: cn=User-1-0-2-1,ou=Team-1-0-2,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-2-2,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-0-2,ou=Team-2-1-0,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-0-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-0-2
+member: cn=User-1-2-0-0,ou=Team-1-2-0,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-1-0,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-1
+member: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-1,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-1-1,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-1-1-0,ou=Groups,dc=example,dc=com
+member: cn=Group-1-1-1,ou=Groups,dc=example,dc=com
+member: cn=Group-1-1-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-1-1-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-1-0
+member: cn=User-1-2-2-0,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-1-0-1,ou=Team-0-1-0,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-2-2,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-1-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-1-1
+member: cn=User-0-2-1-0,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-0,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-2-0,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-1-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-1-2
+member: cn=User-0-2-1-0,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-0,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-1-2,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-2
+member: cn=User-0-0-0-2,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-0-1,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-2,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-1-2-0,ou=Groups,dc=example,dc=com
+member: cn=Group-1-2-1,ou=Groups,dc=example,dc=com
+member: cn=Group-1-2-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-1-2-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-2-0
+member: cn=User-2-2-0-1,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-1-1,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-1-1,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-2-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-2-1
+member: cn=User-1-2-2-0,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-2-1,ou=Team-1-0-2,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-0,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-1-2-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-1-2-2
+member: cn=User-1-1-0-0,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-0-1,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2
+member: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-1-1,ou=Team-0-2-1,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-2-0,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-2-0,ou=Groups,dc=example,dc=com
+member: cn=Group-2-1,ou=Groups,dc=example,dc=com
+member: cn=Group-2-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-2-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-0
+member: cn=User-0-0-2-1,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-2-2-0,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-1-1,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-2-0-0,ou=Groups,dc=example,dc=com
+member: cn=Group-2-0-1,ou=Groups,dc=example,dc=com
+member: cn=Group-2-0-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-2-0-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-0-0
+member: cn=User-2-0-2-2,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-2-2,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-2-2-2,ou=Team-2-2-2,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-0-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-0-1
+member: cn=User-1-1-0-1,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-2,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-0-0,ou=Team-0-0-0,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-0-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-0-2
+member: cn=User-0-1-1-2,ou=Team-0-1-1,o=Unit-0-1,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-2-0-1,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-1
+member: cn=User-2-2-0-0,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-1,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-1-0,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-2-1-0,ou=Groups,dc=example,dc=com
+member: cn=Group-2-1-1,ou=Groups,dc=example,dc=com
+member: cn=Group-2-1-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-2-1-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-1-0
+member: cn=User-2-2-1-2,ou=Team-2-2-1,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-0-0,ou=Team-0-2-0,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-0-1,ou=Team-2-1-0,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-1-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-1-1
+member: cn=User-1-2-2-2,ou=Team-1-2-2,o=Unit-1-2,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-0-1-2,ou=Team-1-0-1,o=Unit-1-0,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-2-2,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-1-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-1-2
+member: cn=User-1-1-0-1,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-2-2-0,ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-2-1,ou=Team-1-1-2,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-2
+member: cn=User-0-2-2-0,ou=Team-0-2-2,o=Unit-0-2,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-0-0-2-1,ou=Team-0-0-2,o=Unit-0-0,c=Country-0,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-1-1-1-2,ou=Team-1-1-1,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=Group-2-2-0,ou=Groups,dc=example,dc=com
+member: cn=Group-2-2-1,ou=Groups,dc=example,dc=com
+member: cn=Group-2-2-2,ou=Groups,dc=example,dc=com
+
+dn: cn=Group-2-2-0,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-2-0
+member: cn=User-1-1-0-2,ou=Team-1-1-0,o=Unit-1-1,c=Country-1,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-2-2,ou=Team-2-0-2,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-2,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-2-1,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-2-1
+member: cn=User-2-1-1-1,ou=Team-2-1-1,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-1-2-2,ou=Team-2-1-2,o=Unit-2-1,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-0-1,ou=Team-2-0-0,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=Group-2-2-2,ou=Groups,dc=example,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: Group-2-2-2
+member: cn=User-2-2-0-2,ou=Team-2-2-0,o=Unit-2-2,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+member: cn=User-2-0-1-0,ou=Team-2-0-1,o=Unit-2-0,c=Country-2,ou=Users,dc=exa
+ mple,dc=com
+
+dn: cn=g-0-0-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-0-0
+gidNumber: 1000
+memberUid: u-1-0-0-2
+memberUid: u-2-1-0-1
+memberUid: u-2-2-2-1
+
+dn: uid=u-0-0-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-0-0
+gidNumber: 1000
+homeDirectory: /home/u-0-0-0-0
+uid: u-0-0-0-0
+uidNumber: 2000
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-0-1
+gidNumber: 1001
+memberUid: u-0-1-0-2
+memberUid: u-0-2-1-1
+memberUid: u-1-0-1-1
+
+dn: uid=u-0-0-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-0-1
+gidNumber: 1001
+homeDirectory: /home/u-0-0-0-1
+uid: u-0-0-0-1
+uidNumber: 2001
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-0-2
+gidNumber: 1002
+memberUid: u-0-1-2-2
+memberUid: u-2-2-2-1
+
+dn: uid=u-0-0-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-0-2
+gidNumber: 1002
+homeDirectory: /home/u-0-0-0-2
+uid: u-0-0-0-2
+uidNumber: 2002
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-1-0
+gidNumber: 1003
+memberUid: u-0-1-1-1
+memberUid: u-0-2-2-1
+memberUid: u-2-2-0-2
+
+dn: uid=u-0-0-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-1-0
+gidNumber: 1003
+homeDirectory: /home/u-0-0-1-0
+uid: u-0-0-1-0
+uidNumber: 2003
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-1-1
+gidNumber: 1004
+memberUid: u-0-2-0-1
+memberUid: u-1-0-1-0
+memberUid: u-2-1-0-1
+
+dn: uid=u-0-0-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-1-1
+gidNumber: 1004
+homeDirectory: /home/u-0-0-1-1
+uid: u-0-0-1-1
+uidNumber: 2004
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-1-2
+gidNumber: 1005
+memberUid: u-0-0-1-0
+memberUid: u-0-0-2-0
+memberUid: u-2-0-0-1
+memberUid: u-2-0-1-2
+memberUid: u-2-0-2-0
+memberUid: u-2-1-0-0
+memberUid: u-2-1-1-0
+
+dn: uid=u-0-0-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-1-2
+gidNumber: 1005
+homeDirectory: /home/u-0-0-1-2
+uid: u-0-0-1-2
+uidNumber: 2005
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-2-0
+gidNumber: 1006
+memberUid: u-0-0-2-1
+memberUid: u-0-1-2-2
+
+dn: uid=u-0-0-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-2-0
+gidNumber: 1006
+homeDirectory: /home/u-0-0-2-0
+uid: u-0-0-2-0
+uidNumber: 2006
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-2-1
+gidNumber: 1007
+memberUid: u-1-0-1-1
+memberUid: u-2-1-0-1
+
+dn: uid=u-0-0-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-2-1
+gidNumber: 1007
+homeDirectory: /home/u-0-0-2-1
+uid: u-0-0-2-1
+uidNumber: 2007
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-0-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-0-2-2
+gidNumber: 1008
+memberUid: u-0-2-2-0
+
+dn: uid=u-0-0-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-0-2-2
+gidNumber: 1008
+homeDirectory: /home/u-0-0-2-2
+uid: u-0-0-2-2
+uidNumber: 2008
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-0-0
+gidNumber: 1009
+memberUid: u-0-0-0-0
+memberUid: u-0-0-0-1
+memberUid: u-1-1-2-0
+memberUid: u-1-2-0-0
+memberUid: u-2-2-0-2
+
+dn: uid=u-0-1-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-0-0
+gidNumber: 1009
+homeDirectory: /home/u-0-1-0-0
+uid: u-0-1-0-0
+uidNumber: 2009
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-0-1
+gidNumber: 1010
+memberUid: u-0-2-1-1
+memberUid: u-1-0-0-2
+
+dn: uid=u-0-1-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-0-1
+gidNumber: 1010
+homeDirectory: /home/u-0-1-0-1
+uid: u-0-1-0-1
+uidNumber: 2010
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-0-2
+gidNumber: 1011
+memberUid: u-0-2-0-0
+memberUid: u-1-1-0-1
+memberUid: u-1-2-0-1
+memberUid: u-2-0-0-2
+
+dn: uid=u-0-1-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-0-2
+gidNumber: 1011
+homeDirectory: /home/u-0-1-0-2
+uid: u-0-1-0-2
+uidNumber: 2011
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-1-0
+gidNumber: 1012
+memberUid: u-1-0-0-0
+memberUid: u-2-2-0-1
+memberUid: u-2-2-2-0
+
+dn: uid=u-0-1-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-1-0
+gidNumber: 1012
+homeDirectory: /home/u-0-1-1-0
+uid: u-0-1-1-0
+uidNumber: 2012
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-1-1
+gidNumber: 1013
+memberUid: u-0-0-0-1
+memberUid: u-1-0-1-0
+memberUid: u-1-0-2-1
+memberUid: u-1-1-0-0
+memberUid: u-2-2-2-1
+
+dn: uid=u-0-1-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-1-1
+gidNumber: 1013
+homeDirectory: /home/u-0-1-1-1
+uid: u-0-1-1-1
+uidNumber: 2013
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-1-2
+gidNumber: 1014
+memberUid: u-0-1-1-2
+memberUid: u-1-0-2-1
+
+dn: uid=u-0-1-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-1-2
+gidNumber: 1014
+homeDirectory: /home/u-0-1-1-2
+uid: u-0-1-1-2
+uidNumber: 2014
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-2-0
+gidNumber: 1015
+memberUid: u-1-1-1-1
+memberUid: u-2-1-2-0
+memberUid: u-2-2-0-0
+memberUid: u-2-2-0-1
+
+dn: uid=u-0-1-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-2-0
+gidNumber: 1015
+homeDirectory: /home/u-0-1-2-0
+uid: u-0-1-2-0
+uidNumber: 2015
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-2-1
+gidNumber: 1016
+memberUid: u-0-2-0-2
+memberUid: u-2-0-2-1
+memberUid: u-2-1-2-1
+
+dn: uid=u-0-1-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-2-1
+gidNumber: 1016
+homeDirectory: /home/u-0-1-2-1
+uid: u-0-1-2-1
+uidNumber: 2016
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-1-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-1-2-2
+gidNumber: 1017
+memberUid: u-1-2-1-1
+memberUid: u-2-1-1-2
+
+dn: uid=u-0-1-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-1-2-2
+gidNumber: 1017
+homeDirectory: /home/u-0-1-2-2
+uid: u-0-1-2-2
+uidNumber: 2017
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-0-0
+gidNumber: 1018
+memberUid: u-0-1-0-0
+memberUid: u-1-0-2-0
+memberUid: u-1-1-0-0
+memberUid: u-1-1-1-1
+memberUid: u-1-2-0-2
+
+dn: uid=u-0-2-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-0-0
+gidNumber: 1018
+homeDirectory: /home/u-0-2-0-0
+uid: u-0-2-0-0
+uidNumber: 2018
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-0-1
+gidNumber: 1019
+memberUid: u-0-0-1-2
+memberUid: u-0-2-2-0
+
+dn: uid=u-0-2-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-0-1
+gidNumber: 1019
+homeDirectory: /home/u-0-2-0-1
+uid: u-0-2-0-1
+uidNumber: 2019
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-0-2
+gidNumber: 1020
+memberUid: u-0-0-2-1
+memberUid: u-0-1-0-0
+memberUid: u-0-2-1-0
+memberUid: u-1-1-0-2
+memberUid: u-1-1-1-2
+memberUid: u-1-2-0-0
+memberUid: u-2-2-2-0
+
+dn: uid=u-0-2-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-0-2
+gidNumber: 1020
+homeDirectory: /home/u-0-2-0-2
+uid: u-0-2-0-2
+uidNumber: 2020
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-1-0
+gidNumber: 1021
+memberUid: u-0-2-1-2
+memberUid: u-0-2-2-2
+memberUid: u-2-0-0-1
+memberUid: u-2-2-1-0
+
+dn: uid=u-0-2-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-1-0
+gidNumber: 1021
+homeDirectory: /home/u-0-2-1-0
+uid: u-0-2-1-0
+uidNumber: 2021
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-1-1
+gidNumber: 1022
+memberUid: u-0-0-1-2
+memberUid: u-0-2-0-0
+memberUid: u-1-1-0-1
+memberUid: u-2-0-1-0
+
+dn: uid=u-0-2-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-1-1
+gidNumber: 1022
+homeDirectory: /home/u-0-2-1-1
+uid: u-0-2-1-1
+uidNumber: 2022
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-1-2
+gidNumber: 1023
+
+dn: uid=u-0-2-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-1-2
+gidNumber: 1023
+homeDirectory: /home/u-0-2-1-2
+uid: u-0-2-1-2
+uidNumber: 2023
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-2-0
+gidNumber: 1024
+memberUid: u-0-1-2-2
+memberUid: u-2-1-0-2
+
+dn: uid=u-0-2-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-2-0
+gidNumber: 1024
+homeDirectory: /home/u-0-2-2-0
+uid: u-0-2-2-0
+uidNumber: 2024
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-2-1
+gidNumber: 1025
+memberUid: u-1-1-2-0
+memberUid: u-1-2-2-2
+memberUid: u-2-0-0-0
+
+dn: uid=u-0-2-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-2-1
+gidNumber: 1025
+homeDirectory: /home/u-0-2-2-1
+uid: u-0-2-2-1
+uidNumber: 2025
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-0-2-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-0-2-2-2
+gidNumber: 1026
+memberUid: u-1-1-1-2
+memberUid: u-2-0-1-1
+memberUid: u-2-1-2-0
+memberUid: u-2-1-2-2
+
+dn: uid=u-0-2-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-0-2-2-2
+gidNumber: 1026
+homeDirectory: /home/u-0-2-2-2
+uid: u-0-2-2-2
+uidNumber: 2026
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-0-0
+gidNumber: 1027
+memberUid: u-0-0-2-2
+memberUid: u-0-1-2-1
+memberUid: u-1-0-1-2
+memberUid: u-1-2-1-2
+
+dn: uid=u-1-0-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-0-0
+gidNumber: 1027
+homeDirectory: /home/u-1-0-0-0
+uid: u-1-0-0-0
+uidNumber: 2027
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-0-1
+gidNumber: 1028
+memberUid: u-0-1-1-1
+memberUid: u-1-2-2-2
+memberUid: u-2-1-0-0
+
+dn: uid=u-1-0-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-0-1
+gidNumber: 1028
+homeDirectory: /home/u-1-0-0-1
+uid: u-1-0-0-1
+uidNumber: 2028
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-0-2
+gidNumber: 1029
+memberUid: u-1-2-0-1
+
+dn: uid=u-1-0-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-0-2
+gidNumber: 1029
+homeDirectory: /home/u-1-0-0-2
+uid: u-1-0-0-2
+uidNumber: 2029
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-1-0
+gidNumber: 1030
+memberUid: u-1-1-1-1
+memberUid: u-1-2-0-2
+memberUid: u-2-1-1-0
+
+dn: uid=u-1-0-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-1-0
+gidNumber: 1030
+homeDirectory: /home/u-1-0-1-0
+uid: u-1-0-1-0
+uidNumber: 2030
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-1-1
+gidNumber: 1031
+memberUid: u-1-0-1-2
+memberUid: u-1-0-2-2
+memberUid: u-1-2-1-1
+memberUid: u-2-2-2-2
+
+dn: uid=u-1-0-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-1-1
+gidNumber: 1031
+homeDirectory: /home/u-1-0-1-1
+uid: u-1-0-1-1
+uidNumber: 2031
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-1-2
+gidNumber: 1032
+memberUid: u-0-1-1-1
+
+dn: uid=u-1-0-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-1-2
+gidNumber: 1032
+homeDirectory: /home/u-1-0-1-2
+uid: u-1-0-1-2
+uidNumber: 2032
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-2-0
+gidNumber: 1033
+memberUid: u-1-2-2-1
+memberUid: u-2-1-2-2
+
+dn: uid=u-1-0-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-2-0
+gidNumber: 1033
+homeDirectory: /home/u-1-0-2-0
+uid: u-1-0-2-0
+uidNumber: 2033
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-2-1
+gidNumber: 1034
+memberUid: u-0-2-2-2
+memberUid: u-1-0-2-1
+memberUid: u-1-1-1-0
+
+dn: uid=u-1-0-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-2-1
+gidNumber: 1034
+homeDirectory: /home/u-1-0-2-1
+uid: u-1-0-2-1
+uidNumber: 2034
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-0-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-0-2-2
+gidNumber: 1035
+memberUid: u-0-0-1-1
+memberUid: u-1-1-0-2
+memberUid: u-1-1-2-2
+memberUid: u-1-2-1-0
+memberUid: u-2-0-2-0
+
+dn: uid=u-1-0-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-0-2-2
+gidNumber: 1035
+homeDirectory: /home/u-1-0-2-2
+uid: u-1-0-2-2
+uidNumber: 2035
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-0-0
+gidNumber: 1036
+memberUid: u-2-0-1-0
+
+dn: uid=u-1-1-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-0-0
+gidNumber: 1036
+homeDirectory: /home/u-1-1-0-0
+uid: u-1-1-0-0
+uidNumber: 2036
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-0-1
+gidNumber: 1037
+memberUid: u-0-0-0-2
+memberUid: u-1-0-0-0
+memberUid: u-1-1-0-2
+
+dn: uid=u-1-1-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-0-1
+gidNumber: 1037
+homeDirectory: /home/u-1-1-0-1
+uid: u-1-1-0-1
+uidNumber: 2037
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-0-2
+gidNumber: 1038
+memberUid: u-0-2-1-2
+memberUid: u-1-1-1-0
+memberUid: u-2-2-1-2
+
+dn: uid=u-1-1-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-0-2
+gidNumber: 1038
+homeDirectory: /home/u-1-1-0-2
+uid: u-1-1-0-2
+uidNumber: 2038
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-1-0
+gidNumber: 1039
+memberUid: u-1-0-0-1
+memberUid: u-1-1-2-0
+memberUid: u-2-2-0-0
+
+dn: uid=u-1-1-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-1-0
+gidNumber: 1039
+homeDirectory: /home/u-1-1-1-0
+uid: u-1-1-1-0
+uidNumber: 2039
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-1-1
+gidNumber: 1040
+memberUid: u-0-0-2-0
+memberUid: u-0-0-2-2
+memberUid: u-0-1-1-0
+memberUid: u-0-2-1-1
+memberUid: u-1-1-0-0
+memberUid: u-2-2-1-1
+
+dn: uid=u-1-1-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-1-1
+gidNumber: 1040
+homeDirectory: /home/u-1-1-1-1
+uid: u-1-1-1-1
+uidNumber: 2040
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-1-2
+gidNumber: 1041
+memberUid: u-0-2-1-2
+
+dn: uid=u-1-1-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-1-2
+gidNumber: 1041
+homeDirectory: /home/u-1-1-1-2
+uid: u-1-1-1-2
+uidNumber: 2041
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-2-0
+gidNumber: 1042
+memberUid: u-0-2-0-2
+memberUid: u-0-2-2-2
+memberUid: u-1-2-0-2
+memberUid: u-1-2-2-1
+memberUid: u-2-2-0-2
+
+dn: uid=u-1-1-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-2-0
+gidNumber: 1042
+homeDirectory: /home/u-1-1-2-0
+uid: u-1-1-2-0
+uidNumber: 2042
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-2-1
+gidNumber: 1043
+memberUid: u-1-0-2-2
+memberUid: u-2-0-2-1
+
+dn: uid=u-1-1-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-2-1
+gidNumber: 1043
+homeDirectory: /home/u-1-1-2-1
+uid: u-1-1-2-1
+uidNumber: 2043
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-1-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-1-2-2
+gidNumber: 1044
+memberUid: u-0-2-2-1
+memberUid: u-2-1-1-2
+memberUid: u-2-1-2-1
+
+dn: uid=u-1-1-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-1-2-2
+gidNumber: 1044
+homeDirectory: /home/u-1-1-2-2
+uid: u-1-1-2-2
+uidNumber: 2044
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-0-0
+gidNumber: 1045
+memberUid: u-0-1-0-0
+memberUid: u-1-1-1-0
+memberUid: u-1-2-2-0
+
+dn: uid=u-1-2-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-0-0
+gidNumber: 1045
+homeDirectory: /home/u-1-2-0-0
+uid: u-1-2-0-0
+uidNumber: 2045
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-0-1
+gidNumber: 1046
+memberUid: u-0-2-2-1
+memberUid: u-1-1-2-1
+memberUid: u-1-1-2-2
+memberUid: u-2-0-2-2
+
+dn: uid=u-1-2-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-0-1
+gidNumber: 1046
+homeDirectory: /home/u-1-2-0-1
+uid: u-1-2-0-1
+uidNumber: 2046
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-0-2
+gidNumber: 1047
+memberUid: u-0-2-1-0
+memberUid: u-2-0-0-1
+memberUid: u-2-0-1-2
+memberUid: u-2-2-2-2
+
+dn: uid=u-1-2-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-0-2
+gidNumber: 1047
+homeDirectory: /home/u-1-2-0-2
+uid: u-1-2-0-2
+uidNumber: 2047
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-1-0
+gidNumber: 1048
+memberUid: u-0-1-0-2
+memberUid: u-0-2-0-2
+memberUid: u-1-0-0-2
+memberUid: u-1-0-2-2
+memberUid: u-2-0-2-2
+memberUid: u-2-2-1-0
+
+dn: uid=u-1-2-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-1-0
+gidNumber: 1048
+homeDirectory: /home/u-1-2-1-0
+uid: u-1-2-1-0
+uidNumber: 2048
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-1-1
+gidNumber: 1049
+memberUid: u-0-0-0-0
+memberUid: u-1-0-2-0
+memberUid: u-1-1-2-2
+
+dn: uid=u-1-2-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-1-1
+gidNumber: 1049
+homeDirectory: /home/u-1-2-1-1
+uid: u-1-2-1-1
+uidNumber: 2049
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-1-2
+gidNumber: 1050
+memberUid: u-1-2-1-2
+memberUid: u-1-2-2-2
+
+dn: uid=u-1-2-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-1-2
+gidNumber: 1050
+homeDirectory: /home/u-1-2-1-2
+uid: u-1-2-1-2
+uidNumber: 2050
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-2-0
+gidNumber: 1051
+
+dn: uid=u-1-2-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-2-0
+gidNumber: 1051
+homeDirectory: /home/u-1-2-2-0
+uid: u-1-2-2-0
+uidNumber: 2051
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-2-1
+gidNumber: 1052
+memberUid: u-0-0-0-1
+memberUid: u-0-1-0-2
+memberUid: u-1-2-1-0
+memberUid: u-2-2-1-0
+
+dn: uid=u-1-2-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-2-1
+gidNumber: 1052
+homeDirectory: /home/u-1-2-2-1
+uid: u-1-2-2-1
+uidNumber: 2052
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-1-2-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-1-2-2-2
+gidNumber: 1053
+memberUid: u-1-0-0-0
+memberUid: u-2-0-2-1
+
+dn: uid=u-1-2-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-1-2-2-2
+gidNumber: 1053
+homeDirectory: /home/u-1-2-2-2
+uid: u-1-2-2-2
+uidNumber: 2053
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-0-0
+gidNumber: 1054
+memberUid: u-2-0-1-2
+memberUid: u-2-2-2-2
+
+dn: uid=u-2-0-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-0-0
+gidNumber: 1054
+homeDirectory: /home/u-2-0-0-0
+uid: u-2-0-0-0
+uidNumber: 2054
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-0-1
+gidNumber: 1055
+memberUid: u-0-0-2-0
+memberUid: u-0-2-0-1
+
+dn: uid=u-2-0-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-0-1
+gidNumber: 1055
+homeDirectory: /home/u-2-0-0-1
+uid: u-2-0-0-1
+uidNumber: 2055
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-0-2
+gidNumber: 1056
+memberUid: u-0-1-2-0
+memberUid: u-0-1-2-1
+memberUid: u-1-0-1-1
+memberUid: u-2-0-0-0
+memberUid: u-2-1-0-2
+memberUid: u-2-1-1-1
+memberUid: u-2-2-1-1
+
+dn: uid=u-2-0-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-0-2
+gidNumber: 1056
+homeDirectory: /home/u-2-0-0-2
+uid: u-2-0-0-2
+uidNumber: 2056
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-1-0
+gidNumber: 1057
+memberUid: u-0-0-0-0
+memberUid: u-1-2-1-2
+memberUid: u-1-2-2-0
+memberUid: u-2-1-1-2
+
+dn: uid=u-2-0-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-1-0
+gidNumber: 1057
+homeDirectory: /home/u-2-0-1-0
+uid: u-2-0-1-0
+uidNumber: 2057
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-1-1
+gidNumber: 1058
+memberUid: u-0-1-0-1
+memberUid: u-0-1-1-2
+memberUid: u-0-2-2-0
+
+dn: uid=u-2-0-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-1-1
+gidNumber: 1058
+homeDirectory: /home/u-2-0-1-1
+uid: u-2-0-1-1
+uidNumber: 2058
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-1-2
+gidNumber: 1059
+memberUid: u-1-1-1-2
+memberUid: u-2-0-0-0
+memberUid: u-2-1-2-0
+memberUid: u-2-2-1-2
+
+dn: uid=u-2-0-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-1-2
+gidNumber: 1059
+homeDirectory: /home/u-2-0-1-2
+uid: u-2-0-1-2
+uidNumber: 2059
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-2-0
+gidNumber: 1060
+memberUid: u-1-2-0-1
+memberUid: u-2-1-0-0
+
+dn: uid=u-2-0-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-2-0
+gidNumber: 1060
+homeDirectory: /home/u-2-0-2-0
+uid: u-2-0-2-0
+uidNumber: 2060
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-2-1
+gidNumber: 1061
+memberUid: u-0-1-1-2
+memberUid: u-1-0-0-1
+memberUid: u-1-1-0-1
+memberUid: u-2-0-0-2
+memberUid: u-2-1-2-2
+
+dn: uid=u-2-0-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-2-1
+gidNumber: 1061
+homeDirectory: /home/u-2-0-2-1
+uid: u-2-0-2-1
+uidNumber: 2061
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-0-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-0-2-2
+gidNumber: 1062
+memberUid: u-0-0-1-0
+memberUid: u-0-0-1-1
+memberUid: u-0-1-0-1
+memberUid: u-0-1-1-0
+memberUid: u-0-1-2-0
+memberUid: u-0-1-2-1
+
+dn: uid=u-2-0-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-0-2-2
+gidNumber: 1062
+homeDirectory: /home/u-2-0-2-2
+uid: u-2-0-2-2
+uidNumber: 2062
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-0-0
+gidNumber: 1063
+memberUid: u-0-0-1-1
+memberUid: u-0-0-2-2
+memberUid: u-0-1-0-1
+memberUid: u-0-1-1-0
+memberUid: u-2-0-0-2
+
+dn: uid=u-2-1-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-0-0
+gidNumber: 1063
+homeDirectory: /home/u-2-1-0-0
+uid: u-2-1-0-0
+uidNumber: 2063
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-0-1
+gidNumber: 1064
+memberUid: u-1-2-1-1
+
+dn: uid=u-2-1-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-0-1
+gidNumber: 1064
+homeDirectory: /home/u-2-1-0-1
+uid: u-2-1-0-1
+uidNumber: 2064
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-0-2
+gidNumber: 1065
+
+dn: uid=u-2-1-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-0-2
+gidNumber: 1065
+homeDirectory: /home/u-2-1-0-2
+uid: u-2-1-0-2
+uidNumber: 2065
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-1-0
+gidNumber: 1066
+memberUid: u-0-2-1-0
+memberUid: u-1-2-2-1
+
+dn: uid=u-2-1-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-1-0
+gidNumber: 1066
+homeDirectory: /home/u-2-1-1-0
+uid: u-2-1-1-0
+uidNumber: 2066
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-1-1
+gidNumber: 1067
+memberUid: u-0-0-0-2
+memberUid: u-1-1-2-1
+memberUid: u-2-0-1-1
+memberUid: u-2-1-1-1
+
+dn: uid=u-2-1-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-1-1
+gidNumber: 1067
+homeDirectory: /home/u-2-1-1-1
+uid: u-2-1-1-1
+uidNumber: 2067
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-1-2
+gidNumber: 1068
+memberUid: u-1-0-0-1
+memberUid: u-2-1-1-0
+memberUid: u-2-2-2-0
+
+dn: uid=u-2-1-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-1-2
+gidNumber: 1068
+homeDirectory: /home/u-2-1-1-2
+uid: u-2-1-1-2
+uidNumber: 2068
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-2-0
+gidNumber: 1069
+
+dn: uid=u-2-1-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-2-0
+gidNumber: 1069
+homeDirectory: /home/u-2-1-2-0
+uid: u-2-1-2-0
+uidNumber: 2069
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-2-1
+gidNumber: 1070
+memberUid: u-0-0-1-0
+memberUid: u-1-2-0-0
+
+dn: uid=u-2-1-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-2-1
+gidNumber: 1070
+homeDirectory: /home/u-2-1-2-1
+uid: u-2-1-2-1
+uidNumber: 2070
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-1-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-1-2-2
+gidNumber: 1071
+memberUid: u-2-0-1-0
+memberUid: u-2-1-0-2
+
+dn: uid=u-2-1-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-1-2-2
+gidNumber: 1071
+homeDirectory: /home/u-2-1-2-2
+uid: u-2-1-2-2
+uidNumber: 2071
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-0-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-0-0
+gidNumber: 1072
+memberUid: u-0-0-2-1
+
+dn: uid=u-2-2-0-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-0-0
+gidNumber: 1072
+homeDirectory: /home/u-2-2-0-0
+uid: u-2-2-0-0
+uidNumber: 2072
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-0-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-0-1
+gidNumber: 1073
+memberUid: u-0-0-0-2
+memberUid: u-1-1-2-1
+
+dn: uid=u-2-2-0-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-0-1
+gidNumber: 1073
+homeDirectory: /home/u-2-2-0-1
+uid: u-2-2-0-1
+uidNumber: 2073
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-0-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-0-2
+gidNumber: 1074
+memberUid: u-0-2-0-1
+
+dn: uid=u-2-2-0-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-0-2
+gidNumber: 1074
+homeDirectory: /home/u-2-2-0-2
+uid: u-2-2-0-2
+uidNumber: 2074
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-1-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-1-0
+gidNumber: 1075
+memberUid: u-2-0-2-2
+memberUid: u-2-1-1-1
+memberUid: u-2-2-1-1
+
+dn: uid=u-2-2-1-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-1-0
+gidNumber: 1075
+homeDirectory: /home/u-2-2-1-0
+uid: u-2-2-1-0
+uidNumber: 2075
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-1-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-1-1
+gidNumber: 1076
+memberUid: u-0-0-1-2
+memberUid: u-2-0-1-1
+
+dn: uid=u-2-2-1-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-1-1
+gidNumber: 1076
+homeDirectory: /home/u-2-2-1-1
+uid: u-2-2-1-1
+uidNumber: 2076
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-1-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-1-2
+gidNumber: 1077
+
+dn: uid=u-2-2-1-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-1-2
+gidNumber: 1077
+homeDirectory: /home/u-2-2-1-2
+uid: u-2-2-1-2
+uidNumber: 2077
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-2-0,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-2-0
+gidNumber: 1078
+memberUid: u-1-0-2-0
+memberUid: u-2-2-0-1
+
+dn: uid=u-2-2-2-0,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-2-0
+gidNumber: 1078
+homeDirectory: /home/u-2-2-2-0
+uid: u-2-2-2-0
+uidNumber: 2078
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-2-1,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-2-1
+gidNumber: 1079
+memberUid: u-0-2-0-0
+memberUid: u-1-2-1-0
+memberUid: u-2-0-2-0
+memberUid: u-2-2-0-0
+memberUid: u-2-2-1-2
+
+dn: uid=u-2-2-2-1,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-2-1
+gidNumber: 1079
+homeDirectory: /home/u-2-2-2-1
+uid: u-2-2-2-1
+uidNumber: 2079
+userPassword:: c2VjcmV0MTI=
+
+dn: cn=g-2-2-2-2,ou=UnixGroups,dc=example,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: g-2-2-2-2
+gidNumber: 1080
+memberUid: u-1-2-2-0
+
+dn: uid=u-2-2-2-2,ou=UnixAccounts,dc=example,dc=com
+objectClass: posixAccount
+objectClass: account
+objectClass: top
+cn: u-2-2-2-2
+gidNumber: 1080
+homeDirectory: /home/u-2-2-2-2
+uid: u-2-2-2-2
+uidNumber: 2080
+userPassword:: c2VjcmV0MTI=
+

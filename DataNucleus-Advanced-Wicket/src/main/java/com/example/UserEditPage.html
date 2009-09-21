@@ -1,0 +1,44 @@
+<!--
+/**********************************************************************
+Copyright (c) 2009 Stefan Seelmann. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ **********************************************************************/
+-->
+<html>
+<body>
+  <span wicket:id="feedback" />
+  <p>
+  <form wicket:id="userEditForm">
+    <table border="1">
+      <tr>
+        <td>First Name:</td><td><input type="text" wicket:id="firstName" /></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td> <td><input type="text" wicket:id="lastName" /></td>
+      </tr>
+      <tr>
+        <td>Person Number:</td> <td><input type="text" wicket:id="personNumber" /></td>
+      </tr>
+      <tr>
+        <td>Team:</td> <td><select wicket:id="team" /></td>
+      </tr>
+      <tr>
+        <td>Groups:</td> <td><span wicket:id="groups" /></td>
+      </tr>
+    </table>
+    <p>
+    <input type="submit" wicket:id="cancelButton" value="Cancel"/>
+    <input type="submit" wicket:id="saveButton" value="Save"/>
+  </form>
+</body>
+</html>
